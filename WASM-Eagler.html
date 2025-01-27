@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Play Eaglercraft (WASM)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    #game-container {
+      width: 100%;
+      height: 80vh;
+      background: #000;
+      position: relative;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Eaglercraft WASM</strong></li>
+    </ul>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="JS-Eagler.html">JS Eaglercraft</a></li>
+      <li><a href="1.5.2-Eagler.html">1.5.2 Eaglercraft</a></li>
+      <li><a href="#" onclick="goFullscreen()">Go Fullscreen</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Play Eaglercraft (WASM Build)</h1>
+    <p>This version uses WebAssembly for better performance.</p>
+    
+    <section id="game-container">
+      <iframe src="EaglercraftX_1.8_WASM-GC_Offline_Download.html" id="gameFrame"
+        allowfullscreen>
+      </iframe>
+    </section>
+    
+    <p>
+      <button onclick="goFullscreen()">Go Fullscreen</button>
+    </p>
+    
+  </main>
+
+  <script>
+    function goFullscreen() {
+      const el = document.getElementById('gameFrame');
+      if (el.requestFullscreen) {
+        el.requestFullscreen();
+      } else if (el.mozRequestFullScreen) { /* Firefox */
+        el.mozRequestFullScreen();
+      } else if (el.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        el.webkitRequestFullscreen();
+      } else if (el.msRequestFullscreen) { /* IE/Edge */
+        el.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>
