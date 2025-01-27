@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eaglercraft Installation Guide</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+  />
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" /> 
+  </head>
+<body>
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Eaglercraft Installation</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#tutorial">Tutorial</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="WASM-Eagler.html">WASM Eaglercraft</a></li>
+      <li><a href="JS-Eagler.html">JS Eaglercraft</a></li>
+      <li><a href="1.5.2-Eagler.html">1.5.2 Eaglercraft</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup id="tutorial">
+          <h2>How to Install Eaglercraft</h2>
+          <h3>WASM &amp; JavaScript Versions</h3>
+        </hgroup>
+        <p>
+          Eaglercraft is a web-based version of Minecraft that you can play
+          entirely in your browser. 
+        </p>
+        <p>
+          There are two builds: 
+          <strong>WebAssembly (WASM)</strong> and 
+          <strong>JavaScript (JS)</strong>.
+        </p>
+        <!-- <figure>
+          <img
+            src="https://via.placeholder.com/800x400"
+            alt="Eaglercraft Illustration"
+          />
+          <figcaption>
+            <a href="https://eagler.dhyrk.com" target="_blank"
+              >Visit the Official Site</a
+            >
+          </figcaption>
+        </figure> -->
+
+        <h3>Why Two Builds?</h3>
+        <ul>
+          <li>
+            <strong>WASM Build</strong>: Runs faster and uses modern
+            <em>WebAssembly</em>. Ideal for better performance—if your browser
+            supports it.
+          </li>
+          <li>
+            <strong>JS Build</strong>: Uses standard JavaScript. Compatible
+            with older setups or certain scenarios where WASM can’t run.
+          </li>
+        </ul>
+
+        <h3>Enable JSPI Flags (if needed)</h3>
+        <p>
+          Some browsers require enabling 
+          <strong>JSPI (JavaScript Interface) flags</strong> for certain 
+          advanced or experimental features in Eaglercraft:
+        </p>
+        <ol>
+          <li>Open your browser's <em>flags</em> or <em>experimental features</em> page.</li>
+          <li>Search for <code>javascript experiments</code> or <code>JSPI</code>.</li>
+          <li>Set it to <em>Enabled</em> (or <em>Default</em> if that includes experimental JS features).</li>
+          <li>Restart your browser if prompted.</li>
+        </ol>
+        <p>
+          This step may differ by browser, so consult your browser’s documentation if you have trouble.
+        </p>
+
+        <h3>Steps to Install the <strong>WebAssembly</strong> Version</h3>
+        <ol>
+          <li>
+            <strong>Download the WASM package</strong> from the 
+            <a href="#download">download section below</a>.
+          </li>
+          <li>Extract the ZIP file to a folder of your choice.</li>
+          <li>
+            Double-click or open the <code>index.html</code> file inside that
+            folder—this launches Eaglercraft in your default browser.
+          </li>
+          <li>
+            If you see any warnings about <em>WebAssembly</em> or
+            <em>JSPI flags</em>, be sure to follow the steps above to enable them.
+          </li>
+        </ol>
+
+        <h3>Steps to Install the <strong>JavaScript</strong> Version</h3>
+        <ol>
+          <li>
+            <strong>Download the JS build</strong> from the 
+            <a href="#download">download section below</a>.
+          </li>
+          <li>Extract the ZIP file anywhere you like.</li>
+          <li>
+            Open <code>index.html</code> to play in your browser. This version 
+            is slightly less performant but doesn’t require advanced WASM 
+            support.
+          </li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- Download Section -->
+  <section id="download" aria-label="Download Eaglercraft">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Download Eaglercraft</h2>
+          <h3>Choose WASM or JS below</h3>
+        </hgroup>
+
+        <p>
+          For better performance, choose the <strong>WASM Build</strong>. 
+          If your device/browser doesn't fully support WASM, choose the 
+          <strong>JavaScript Build</strong>.
+        </p>
+
+        <div class="grid">
+          <!-- WASM Build Download -->
+          <article>
+            <h4>WASM Build (Recommended)</h4>
+            <p>
+              Faster performance. Requires modern browser with 
+              <em>WebAssembly</em> support.
+            </p>
+            <a
+              href="EaglercraftX_1.8_WASM-GC_Offline_Download.zip"
+              class="contrast"
+              role="button"
+            >
+              Download WASM Package
+            </a>
+          </article>
+
+          <!-- JS Build Download -->
+          <article>
+            <h4>JavaScript Build</h4>
+            <p>
+              For older browsers or systems where WASM is not an option.
+            </p>
+            <a
+              href="EaglercraftX_1.8_Signed_Offline.zip"
+              role="button"
+            >
+              Download JS Package
+            </a>
+          </article>
+
+                    <!-- JS 1.5.5 Build Download -->
+          <article>
+            <h4>JavaScript 1.5.2 Build</h4>
+            <p>
+              For older browsers or systems where WASM is not an option and you want 1.5.2.
+            </p>
+            <a
+              href="EaglercraftX_1.8_Signed_Offline.zipOffline_Download_Version.zipbutton"
+            >
+              Download JS 1.5.5 Package
+            </a>
+            </article>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact or Footer -->
+  <footer class="container" id="contact">
+    <small>
+      <!-- <a href="https://eagler.dhyrk.com" target="_blank">Official Website</a> • -->
+      <a href="mailto:dylhyrkas@gmail.com">Contact Support</a> •
+    </small>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(() => console.log('Service Worker registered'))
+          .catch(err => console.error('SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>
