@@ -35,5 +35,6 @@
   "orientation": "landscape",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "categories": ["games", "entertainment"]
+  "categories": ["games", "entertainment"],
+  "id": "/index.html"
 }
